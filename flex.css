@@ -63,7 +63,34 @@
 }
 
 /* Tablet Styles*/
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+  .flex-container {
+    height: fit-content;
+  }
+  /* you are able to override width and other properties here */
+  .quarter {
+    width: 48%;
+  }
 
+  .third {
+    width: 48%;
+  }
+
+  .third:last-child {
+    width: 97%;
+    /* flex-grow: 1*/
+    order: 2;
+  }
+}
+/* you are able to target multiple classes in one selection */
+@media screen and (max-width: 480px) {
+  .half,
+  .third, 
+  .quarter {
+    width: 97%;
+  }
+  
+}
 
 
 
